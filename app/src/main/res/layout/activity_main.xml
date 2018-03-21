@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pertuz.practlabo.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/resert"
+        android:layout_toRightOf="@+id/resert"
+        android:text="B"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masUnoTemaA"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/masUnoTemaA"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text="A"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="154dp"
+        android:id="@+id/view2" />
+
+    <Button
+        android:id="@+id/masUnoTemaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:onClick="masUno"
+        android:text="+1"
+        />
+
+    <Button
+        android:id="@+id/masDosTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masUnoTemaA"
+        android:layout_alignStart="@+id/masUnoTemaA"
+        android:layout_below="@+id/view2"
+        android:onClick="masDos"
+        android:text="+2" />
+
+    <Button
+        android:id="@+id/masTresTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resert"
+        android:layout_alignLeft="@+id/masDosTeamB"
+        android:layout_alignStart="@+id/masDosTeamB"
+        android:onClick="masTres"
+        android:text="+3" />
+
+    <Button
+        android:id="@+id/masUnoTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/masUnoTemaA"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:text="+1"
+        android:onClick="masUno"
+         />
+
+    <Button
+        android:id="@+id/masDosTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masUnoTeamB"
+        android:layout_alignStart="@+id/masUnoTeamB"
+        android:layout_below="@+id/view2"
+        android:onClick="masDos"
+        android:text="+2" />
+
+    <Button
+        android:id="@+id/masTresTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masDosTeamA"
+        android:layout_alignStart="@+id/masDosTeamA"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="107dp"
+        android:onClick="masTres"
+        android:text="+3" />
+
+    <Button
+        android:id="@+id/resert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/masTresTeamA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:onClick="resert"
+        android:text="RESERT" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#000"
+        android:layout_above="@id/resert"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
